@@ -40,4 +40,9 @@ To start just open in your browser ```localhost:8080```, it will re uest an user
 Both of them will be generated with the standalone command and it will **appear among the init message at the terminal** (just look carefully, it's kinda of hidden among all the text).
 
 # Key Concepts <a name='key_concepts'></a>
+Here are some key concepts (that may be useful to have easy access when necessary):
+## DAG - Directed Acycic Graph<a name= 'dag'></a>
+**Definition:** It's the core concept of airflow.,organized with dependencies and relationships to say how they should run.
 
+**Example**:
+![Basic DAG](/images/basic-dag.png.png "Title")
