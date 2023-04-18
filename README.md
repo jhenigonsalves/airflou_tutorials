@@ -1,16 +1,20 @@
 # Airflow for Beginners
 The notes here came from the oficial documentation of Apache Airflow 
-## Quick Start
+
 Airflow is compatible with the folowing python versions:
 - Python 3.7, 
 - Python 3.8, 
 - Python 3.9, 
 - Python 3.10.
-``` python
-    # Airflow needs a home. `~/airflow` is the default, but you can put it
-    # somewhere else if you prefer (optional)
-    export AIRFLOW_HOME=~/airflow
 
+And installing it using *pip* is the only supported way of installation. But it can be done using *poetry* or *pip-tools* using some *workaround* way.
+## Quick Start
+- We can change the default home folder with, just changing the path:
+``` python
+    export AIRFLOW_HOME=~/airflow
+```
+
+``` Python
     # Install Airflow using the constraints file
     AIRFLOW_VERSION=2.5.3
     PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
