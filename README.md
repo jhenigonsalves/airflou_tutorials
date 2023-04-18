@@ -1,4 +1,10 @@
-# Airflow for Beginners
+# Table of Contents
+1. [Introduction](#introduction)
+1. [Quick Start](#quick_start)
+    1. [Sub paragraph](#subparagraph1)
+1. [Key Concepts](#key_concepts)
+   
+# Airflow for Beginners <a name = 'Introduction'></a>
 The notes here came from the oficial documentation of Apache Airflow 
 
 Airflow is compatible with the folowing python versions:
@@ -8,7 +14,7 @@ Airflow is compatible with the folowing python versions:
 - Python 3.10.
 
 And installing it using *pip* is the only supported way of installation. But it can be done using *poetry* or *pip-tools* using some *workaround* way.
-## Quick Start
+# Quick Start <a name = 'quick_start'></a>
 We can change the default home folder with, just changing the path:
 ``` python
     export AIRFLOW_HOME=~/airflow
@@ -32,4 +38,6 @@ To initialise the database, make a user and start all componentes
 ```
 To start just open in your browser ```localhost:8080```, it will re uest an user and password. 
 Both of them will be generated with the standalone command and it will **appear among the init message at the terminal** (just look carefully, it's kinda of hidden among all the text).
+
+# Key Concepts <a name='key_concepts'></a>
 
