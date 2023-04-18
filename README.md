@@ -45,4 +45,13 @@ Here are some key concepts (that may be useful to have easy access when necessar
 **Definition:** It's the core concept of airflow.,organized with dependencies and relationships to say how they should run.
 
 **Example**:
-![Basic DAG](/images/basic-dag.png.png "Title")
+
+![Basic DAG](/images/basic-dag.png)
+- The squares are the Tasks  (A, B, C e D)
+- The arrow dictates the order and the dependencies of the execution
+ - **SOMETHING** It will also say how often to run the DAG - maybe "every 5 minutes starting tomorrow", or "every day since January 1st, 2020".
+
+The DAG itself **doesn't care about what is happening inside the tasks**; 
+
+it is merely concerned with **how to execute them** - the order to run them in, how many times to retry them, if they have timeouts, and so on.
+
